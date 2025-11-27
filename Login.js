@@ -5,12 +5,14 @@ const signInButton = document.getElementById('signIn');
 if (signUpButton) {
     signUpButton.addEventListener('click', function () {
         container && container.classList.add('right-panel-active');
+        container.classList.remove('left-panel-active');
     });
 }
 
 if (signInButton) {
     signInButton.addEventListener('click', function () {
         container && container.classList.remove('right-panel-active');
+        container.classList.add('left-panel-active');
     });
 }
 

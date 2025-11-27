@@ -92,6 +92,10 @@ input:focus {
 	z-index:1; 
 	transform:translateX(100%); 
 }
+.container.left-panel-active h1,
+.container.right-panel-active h1 {
+	color:#fff;
+}
 .container.right-panel-active .sign-in-container { 
 	transform:translateX(100%); 
 }
