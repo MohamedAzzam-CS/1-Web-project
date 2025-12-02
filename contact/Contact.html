@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index/index.css">
+    <link rel="stylesheet" href="Contact.css">
+    <title>Contact Us</title>
+    
+</head>
+<body>
+        <nav class="main-nav">
+            <div class="brand"><span class="dot"></span>My Restaurant</div>
+            <div class="links">
+                <a href="../index/index.html">Home</a>
+                <a href="../product/product.html">Products</a>
+                <a href="../about/about.html">About</a>
+                <a href="Contact.html" class="active">Contact</a>
+                <a href="../Login.html">Login</a>
+            </div>
+        </nav>
+
+        <header style="padding: 32px 16px 0;">
+            <div class="top">
+                <h1>Get in Touch</h1>
+            </div>
+        </header>
+
+        <div class="container">
+                <div class="section">
+                    <p>If you have any questions or need support, send us a message and we’ll get back to you shortly.</p>
+                </div>
+
+                <div class="form-box">
+            <form id="contactForm">
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>First Name <span class="required">*</span></label>
+                        <input type="text" id="firstName" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Last name<span class="required">*</span></label>
+                        <input type="text" id="lastName" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Email<span class="required">*</span></label>
+                        <input type="email" id="email" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Type of inquiry<span class="required">*</span></label>
+                        <select id="inquiryType" required>
+                            <option value="">Choose the type of inquiry</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="tips">Tips and Guidelines</option>
+                            <option value="support">Request support</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <label>The message<span class="required">*</span></label>
+                    <textarea id="message" required></textarea>
+                </div>
+                
+                <div class="checkbox">
+                    <input type="checkbox" id="agree" required>
+                    <label for="agree">I agree to be contacted<span class="required">*</span></label>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send</button>
+            </form>
+        </div>
+    </div>
+    
+     <script src="Contact.js"></script>
+     <script src="../nav.js"></script>
+</body>
+</html>

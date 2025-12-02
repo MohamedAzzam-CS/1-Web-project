@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Egyptian Restaurant — Products</title>
+  <link rel="stylesheet" href="../index/index.css">
+  <link rel="stylesheet" href="/product/product.css">
+</head>
+<body>
+   <nav class="main-nav">
+            <div class="brand"><span class="dot"></span>My Restaurant</div>
+            <div class="links">
+                <a href="../index/index.html">Home</a>
+                <a href="../product.html">Products</a>
+                <a href="../about/about.html">About</a>
+                <a href="../contact/Contact.html">Contact</a>
+                <a href="../Login/Login.html" class="active">Login</a>
+            </div>
+        </nav>
+
+  <main class="container">
+    <section id="products" class="grid">
+      <article class="card">
+        <img src="https://via.placeholder.com/400x250?text=Koshary" alt="Koshary" />
+        <div class="card-body">
+          <h3 class="title">Koshary</h3>
+          <p class="desc">Rice, macaroni, lentils, chickpeas, tomato sauce & crispy onions.</p>
+          <div class="meta">
+            <span class="price">EGP 40</span>
+            <button class="btn add">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://via.placeholder.com/400x250?text=Shawarma" alt="Shawarma" />
+        <div class="card-body">
+          <h3 class="title">Chicken Shawarma</h3>
+          <p class="desc">Marinated chicken, garlic sauce, pickles, wrapped in pita.</p>
+          <div class="meta">
+            <span class="price">EGP 35</span>
+            <button class="btn add">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://via.placeholder.com/400x250?text=Falafel" alt="Falafel" />
+        <div class="card-body">
+          <h3 class="title">Falafel Sandwich</h3>
+          <p class="desc">Crispy falafel with tahini, salad, and pickles.</p>
+          <div class="meta">
+            <span class="price">EGP 20</span>
+            <button class="btn add">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://via.placeholder.com/400x250?text=Taameya" alt="Taameya" />
+        <div class="card-body">
+          <h3 class="title">Taameya (Egyptian falafel)</h3>
+          <p class="desc">Made from crushed fava beans, herbs and fried to perfection.</p>
+          <div class="meta">
+            <span class="price">EGP 18</span>
+            <button class="btn add">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://via.placeholder.com/400x250?text=Fiteer" alt="Fiteer" />
+        <div class="card-body">
+          <h3 class="title">Feteer (Egyptian Pie)</h3>
+          <p class="desc">Layers of flaky dough — serve with honey or cheese.</p>
+          <div class="meta">
+            <span class="price">EGP 55</span>
+            <button class="btn add">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://via.placeholder.com/400x250?text=Tea" alt="Egyptian Tea" />
+        <div class="card-body">
+          <h3 class="title">Egyptian Tea</h3>
+          <p class="desc">Strong black tea, traditionally brewed.</p>
+          <div class="meta">
+            <span class="price">EGP 5</span>
+            <button class="btn add">Add</button>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <aside class="cart">
+      <h2>Cart</h2>
+      <ul id="cart-list">
+        <li class="empty">No items yet.</li>
+      </ul>
+      <div class="cart-total">
+        <strong>Total:</strong> <span id="total">EGP 0</span>
+      </div>
+      <button id="checkout" class="btn primary" disabled>Checkout</button>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Prices listed in Egyptian Pounds (EGP).</p>
+    </div>
+  </footer>
+
+<script src="product.js"></script><script src="../nav.js"></script>
+</body>
+</html>

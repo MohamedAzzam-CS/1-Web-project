@@ -1,61 +1,54 @@
-html, body { height:100%; }
+html, body { height: 100%; }
 :root {
-	--accent: #4A90E2; 
-	--accent-alt: #6BB5FF; 
-	--accent-hover: #3C7BC2; 
-	--bg: #f2f6fa; 
-	--panel-bg: #ffffff;
-	--text: #2c3e50;
-	--muted: #5f6e7a;
-	--focus-ring: #9fd3ff;
+  --accent: #4A90E2;
+  --accent-alt: #6BB5FF;
+  --accent-hover: #3C7BC2;
+  --bg: #f2f6fa;
+  --text: #2c3e50;
+  --muted: #2d3f4e;
+  --focus-ring: rgba(74, 144, 226, 0.3);
 }
-body { 
-	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	background:var(--bg);
-	margin:0;
-	min-height:100vh;
-	display:flex;
-	align-items:center;
-	justify-content:center;
-	color:var(--text);
-	}
-button {
-	border-radius:20px;
-	border:1px solid var(--accent); 
-	background:var(--accent); 
-	color:#FFF; 
-	font-size:12px; 
-	font-weight:bold; 
-	padding:12px 45px; 
-	letter-spacing:1px; 
-	text-transform:uppercase; 
-	transition:transform 80ms ease-in, background .25s ease, filter .25s ease;
-	cursor:pointer; }
-button:active { 
-	transform:scale(0.95); 
-			  }
-button:focus {
-	outline:none; 
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg);
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
 }
-button:hover {
-	 background:var(--accent-hover); 
-	 filter:brightness(1.02); 
-	}
+
+.container button,
+.overlay-panel button {
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.container button:hover,
+.overlay-panel button:hover { background-color: var(--accent-hover); }
+
+button:active { transform: scale(0.95); }
+button:focus { outline: none; }
+
 input {
-	 background-color:#e9eef3; 
-	 border:1px solid #d0d7de; 
-	 padding:12px 15px; 
-	 margin:8px 0; 
-	 width:100%; 
-	 font-size:14px; 
-	 border-radius:6px; 
-	 transition:border-color .2s ease, background .2s ease;
-	 }
+  background-color: #e9eef3;
+  border: 1px solid #d0d7de;
+  padding: 12px 15px;
+  border-radius: 6px;
+  transition: border-color .2s ease, background .2s ease;
+}
 input:focus {
-	 outline:2px solid var(--focus-ring); 
-	 outline-offset:2px; 
-	 background:#fff; 
-	}
+  outline: none;
+  box-shadow: 0 0 0 3px var(--focus-ring);
+  border-color: var(--accent);
+  background: #fff;
+}
 
 .container { 
 	background:#fff; 
